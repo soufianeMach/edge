@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  edgeconnector-siemens:
+    image: softingindustrial/edgeconnector-siemens
+    container_name: edgeconnector-siemens
+    restart: unless-stopped
+    ports:
+      - "8443:443"
+      - "4897:4897"
