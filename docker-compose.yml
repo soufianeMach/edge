@@ -1,10 +1,9 @@
-version: "3.8"
+version: '3.8'
 
 services:
-  edgeconnector-siemens:
-    image: softingindustrial/edgeconnector-siemens
-    container_name: edgeconnector-siemens
+  hello-world:
+    image: mel95/hello_world
+    container_name: hello-world
     restart: unless-stopped
     ports:
-      - "8443:443"
-      - "4897:4897"
+      - "8080:80"
